@@ -1,0 +1,26 @@
+@PORT =3000
+@HOST=http://localhost:{{PORT}}
+
+###
+
+GET {{HOST}}/api/blogentries
+
+###
+POST {{HOST}}/api/blogentries
+Authorization: API-KEY
+Content-Type: application/json
+
+{
+    "title": "mi nuevo post",
+    "description": "description post",
+    "categoryId": 2,
+    "authorId":1
+}
+
+
+###
+
+GET {{HOST}}/api/authors
+
+###
+POST {{HOST}}/api/authors
